@@ -1,0 +1,7 @@
+@media screen and (max-width: 780px) {
+  .dropdown {
+    /* margin-left: -24px; */
+    margin-right: -14px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,81 @@
+.toolbar {
+  display: flex;
+
+  font-family:
+    BlinkMacSystemFont,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+.search {
+  background-color: white;
+  padding: 0px 10px;
+  border-radius: 5px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; /* Add this line to vertically center flex items */
+  gap: 10px;
+  /* text pointer will disable when click outside the text button */
+  user-select: none;
+}
+
+.inputBase {
+  width: 600px;
+  max-width: 480px;
+}
+.inputBase::placeholder {
+  color: #8e3a52;
+}
+@media (max-width: 600px) {
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.paisa {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+@media screen and (max-width: 780px) {
+  .typo {
+    display: none;
+    font-size: 12px;
+  }
+  .pixeling {
+    position: relative;
+
+    top: 0px;
+    left: 0px;
+  }
+  .paisa {
+    display: none;
+  }
+
+  .keety {
+    margin-right: 23px;
+    display: block;
+  }
+  .hupp {
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .inputBase {
+    width: 100%;
+    max-width: 200px;
+  }
+}
